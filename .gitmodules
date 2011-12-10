@@ -3,4 +3,4 @@
 	url = git://github.com/emacsmirror/python-mode.git
 [submodule "emacs-for-python"]
 	path = emacs-for-python
-	url = git://github.com/gabrielelanaro/emacs-for-python.git
+	url = git@github.com:simpleton/emacs-for-python.git
