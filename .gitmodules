@@ -4,3 +4,6 @@
 [submodule "emacs-for-python"]
 	path = emacs-for-python
 	url = git@github.com:simpleton/emacs-for-python.git
+[submodule "ecb"]
+	path = ecb
+	url = https://github.com/emacsmirror/ecb.git
