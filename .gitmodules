@@ -7,3 +7,6 @@
 [submodule "ecb"]
 	path = ecb
 	url = https://github.com/emacsmirror/ecb.git
+[submodule "haddoc"]
+	path = haddoc
+	url = https://github.com/emacsmirror/haddoc.git
