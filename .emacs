@@ -24,6 +24,10 @@
 (color-theme-initialize)
 (color-theme-deep-blue)
 
+;;viper-mode
+(setq viper-mode t)
+(require `viper)
 
-
+;;hiden tool-bar
+(tool-bar-mode)
 
