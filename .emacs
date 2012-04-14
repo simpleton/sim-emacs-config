@@ -3,6 +3,11 @@
 (set-frame-parameter nil 'fullscreen (if (frame-parameter nil 'fullscreen)
                                            nil
                                            'fullboth))
+;; cedet
+(load-file "~/.emacs.d/cedet-1.0.1/common/cedet.el")
+(global-ede-mode 1)                      ; Enable the Project management system
+(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+(global-srecode-minor-mode 1)            ; Enable template insertion menu
  ;;emacs-for-python
  (load-file "~/.emacs.d/emacs-for-python/epy-init.el")
 
@@ -23,10 +28,6 @@
 (require 'color-theme)
 (color-theme-initialize)
 (color-theme-deep-blue)
-
-;;viper-mode
-(setq viper-mode t)
-(require `viper)
 
 ;;hiden tool-bar
 (tool-bar-mode)
