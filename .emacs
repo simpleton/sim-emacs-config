@@ -4,10 +4,11 @@
                                            nil
                                            'fullboth))
 ;; cedet
-(load-file "~/.emacs.d/cedet-1.0.1/common/cedet.el")
-(global-ede-mode 1)                      ; Enable the Project management system
-(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
-(global-srecode-minor-mode 1)            ; Enable template insertion menu
+;;(load-file "~/.emacs.d/cedet-1.0.1/common/cedet.el")
+;;(global-ede-mode 1)                      ; Enable the Project management system
+;;(semantic-load-enable-code-helpers)      ; Enable prototype help and smart completion 
+;;(global-srecode-minor-mode 1)            ; Enable template insertion menu
+
  ;;emacs-for-python
  (load-file "~/.emacs.d/emacs-for-python/epy-init.el")
 
@@ -54,3 +55,12 @@
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
    (cons '("\\.md" . markdown-mode) auto-mode-alist))
+;;cscope
+(load-file "/usr/share/emacs/site-lisp/xcscope.el")
+(require 'xcscope)
+;;sbcl
+(setq inferior-lisp-program "/usr/bin/sbcl");
+;;slime
+;;(add-to-list 'load-path"/usr/share/common-lisp/source/slime")
+;;(require 'slime)
+;;(slime-setup)
