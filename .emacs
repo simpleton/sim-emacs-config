@@ -69,6 +69,7 @@
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
  '(ede-project-directories (quote ("/home/simsun/starfish/fetch_epg")))
+ '(scroll-bar-mode (quote right))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -87,7 +88,7 @@
 (setq EmacsPortable-global-tabbar 't) ; 开启标签栏支持
 (setq EmacsPortable-global-ruler 't) ; 开启全局标尺
 ;(setq EmacsPortable-popup-menu 't) ; 弹出式菜单.
-;(setq EmacsPortable-popup-toolbar 't) ; 弹出式工具栏
+(setq EmacsPortable-popup-toolbar 't) ; 弹出式工具栏
 (add-to-list 'load-path "~/.emacs.d/tabbar-ruler.el")
 (require 'tabbar-ruler)
 
