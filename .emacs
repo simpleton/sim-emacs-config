@@ -13,15 +13,15 @@
 ;; Add further minor-modes to be enabled by semantic-mode.
 ;; See doc-string of `semantic-default-submodes' for other things
 ;; you can use here.
-;;(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
-;;(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
-;;(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-summary-mode t)
+(add-to-list 'semantic-default-submodes 'global-semantic-idle-completions-mode t)
+(add-to-list 'semantic-default-submodes 'global-cedet-m3-minor-mode t)
 
 ;; Enable Semantic
-;;(semantic-mode 1)
+(semantic-mode 1)
 
 ;; Enable EDE (Project Management) features
-;;(global-ede-mode 1)
+(global-ede-mode 1)
          ; Enable template insertion menu
 
  ;;emacs-for-python
@@ -91,4 +91,18 @@
 (setq EmacsPortable-popup-toolbar 't) ; 弹出式工具栏
 (add-to-list 'load-path "~/.emacs.d/tabbar-ruler.el")
 (require 'tabbar-ruler)
+
+
+;;ecb
+(require 'semantic/analyze)
+(provide 'semantic-analyze)
+(provide 'semantic-ctxt)
+(provide 'semanticdb)
+(provide 'semanticdb-find)
+(provide 'semanticdb-mode)
+(provide 'semantic-load)
+
+
+(add-to-list 'load-path "~/.emacs.d/ecb-2.40")
+(require 'ecb)
 
