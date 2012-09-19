@@ -13,3 +13,9 @@
 [submodule "ede"]
 	path = ede
 	url = https://github.com/emacsmirror/ede.git
+[submodule "tabbar"]
+	path = tabbar
+	url = https://github.com/dholm/tabbar.git
+[submodule "tabbar-ruler.el"]
+	path = tabbar-ruler.el
+	url = https://github.com/mlf176f2/tabbar-ruler.el.git
