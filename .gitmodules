@@ -4,12 +4,6 @@
 [submodule "emacs-for-python"]
 	path = emacs-for-python
 	url = git@github.com:simpleton/emacs-for-python.git
-[submodule "haddoc"]
-	path = haddoc
-	url = https://github.com/emacsattic/haddoc.git
 [submodule "markdown-mode"]
 	path = markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
-[submodule "magit"]
-	path = magit
-	url = https://github.com/simpleton/magit.git
