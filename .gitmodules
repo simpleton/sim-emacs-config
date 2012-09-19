@@ -7,3 +7,9 @@
 [submodule "markdown-mode"]
 	path = markdown-mode
 	url = git://jblevins.org/git/markdown-mode.git
+[submodule "cedet"]
+	path = cedet
+	url = https://github.com/emacsmirror/cedet.git
+[submodule "ede"]
+	path = ede
+	url = https://github.com/emacsmirror/ede.git
