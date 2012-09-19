@@ -33,21 +33,6 @@
 ;;hiden tool-bar
 (tool-bar-mode)
 
-;;ecb
-(add-to-list 'load-path "~/.emacs.d/ecb/")
-(require 'ecb)
-(custom-set-variables
-  ;; custom-set-variables was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- '(ecb-options-version "2.40"))
-(custom-set-faces
-  ;; custom-set-faces was added by Custom.
-  ;; If you edit it by hand, you could mess it up, so be careful.
-  ;; Your init file should contain only one such instance.
-  ;; If there is more than one, they won't work right.
- )
 
 ;;markdown-mode
 (add-to-list 'load-path "~/.emacs.d/markdown-mode/")
@@ -55,12 +40,11 @@
    "Major mode for editing Markdown files" t)
 (setq auto-mode-alist
    (cons '("\\.md" . markdown-mode) auto-mode-alist))
+
 ;;cscope
 (load-file "/usr/share/emacs/site-lisp/xcscope.el")
 (require 'xcscope)
+
 ;;sbcl
 (setq inferior-lisp-program "/usr/bin/sbcl");
-;;slime
-;;(add-to-list 'load-path"/usr/share/common-lisp/source/slime")
-;;(require 'slime)
-;;(slime-setup)
+
